@@ -35,7 +35,7 @@ const Header = () => {
             <div>
                 {
                     result.data ? (
-                        result.data.characters.results.map(character => {
+                        result.data.characters?.results.map(character => {
                             return (
                                 <div key={character.id}>
                                     <Link href={`/character/${character.id}`}>
